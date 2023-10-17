@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShapeCatcher 2D - Abhiram's Shape-Catching Adventure</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="instructions">Use your mouse to move the paddle. Catch the falling shapes to score points!</div>
+    <div class="game-container">
+        <div class="paddle" id="paddle"></div>
+        <div class="shape circle" id="ball"></div>
+        <div class="score" id="score">Score: 0</div>
+        <button class="start-button" id="start-button" onclick="startGame()">Start Game</button>
+    </div>
+      <div id="jaas-container">
+        <div class="jitsi-heading">Join Video Conference</div>
+        <div class="jitsi-info">Chat and collaborate with others in real time.</div>
+        <div id="jitsi-iframe-container"></div>
+      </div>
+
+      <div id="top-scores">
+        <div class="top-scores-heading">Top Scores</div>
+        <ol id="score-list"></ol>
+      </div>
+    
+
+    <script src="script.js"></script>
+
+
+    <script src='https://8x8.vc/vpaas-magic-cookie-823ce5dea72643feb03761c376c86ede/external_api.js' async></script>
+    <style>html, body, #jaas-container { height: 100%; }</style>
+    <script type="text/javascript">
+      window.onload = () => {
+        const api = new JitsiMeetExternalAPI("8x8.vc", {
+          roomName: "vpaas-magic-cookie-823ce5dea72643feb03761c376c86ede/SampleAppLazyExplosionsPrayStill",
+          parentNode: document.querySelector('#jaas-container'),
+                       
+        });
+      }
+    </script>
+
+</body>
+</html>
